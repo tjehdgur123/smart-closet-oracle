@@ -1,0 +1,11 @@
+.gradle/
+.gradle-user/
+.git-upload/
+.android-user/
+.android/
+.idea/
+build/
+app/build/
+local.properties
+analytics.settings
+*.iml

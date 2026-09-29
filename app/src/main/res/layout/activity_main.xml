@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Smart Closet"
+        android:textColor="@color/text_main"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="내 옷을 등록하고 코디를 저장하는 스마트 옷장"
+        android:textColor="@color/text_muted"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnAddClothes"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_primary"
+        android:text="1. 의류 등록"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnClothesList"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_secondary"
+        android:text="2. 내 옷장 보기"
+        android:textColor="@color/brand" />
+
+    <Button
+        android:id="@+id/btnCoordination"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_secondary"
+        android:text="3. 코디북"
+        android:textColor="@color/brand" />
+
+    <Button
+        android:id="@+id/btnFavorites"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_secondary"
+        android:text="4. 즐겨찾기"
+        android:textColor="@color/brand" />
+</LinearLayout>

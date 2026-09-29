@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="72dp"
+            android:layout_height="44dp"
+            android:background="@drawable/button_secondary"
+            android:text="뒤로"
+            android:textColor="@color/brand" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:text="내 옷장"
+            android:textColor="@color/text_main"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="옷 종류"
+        android:textColor="@color/text_muted"
+        android:textSize="13sp" />
+
+    <Spinner
+        android:id="@+id/spinnerTypeFilter"
+        android:layout_width="match_parent"
+        android:layout_height="46dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="색상"
+        android:textColor="@color/text_muted"
+        android:textSize="13sp" />
+
+    <Spinner
+        android:id="@+id/spinnerColorFilter"
+        android:layout_width="match_parent"
+        android:layout_height="46dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="계절"
+        android:textColor="@color/text_muted"
+        android:textSize="13sp" />
+
+    <Spinner
+        android:id="@+id/spinnerSeasonFilter"
+        android:layout_width="match_parent"
+        android:layout_height="46dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerClothes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1" />
+</LinearLayout>
