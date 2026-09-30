@@ -187,6 +187,20 @@ sqlplus -L smart_closet@localhost:1521/XEPDB1 @db/demo_queries.sql
 
 `demo_queries.sql`은 의류 속성과 이미지 크기, 코디별 의류 수, 코디-의류 조인 결과, 즐겨찾기 데이터를 출력합니다. 앱 조작 직후 SQL 결과가 바뀌는 것으로 실제 Oracle 연동을 보여줄 수 있습니다.
 
+## Oracle 연동 검증
+
+### 의류와 이미지 BLOB 저장
+
+![SQL Developer 의류와 이미지 BLOB 조회 결과](docs/screenshots/oracle-clothes-blob.png)
+
+앱에서 등록한 옷 종류, 색상, 계절, 즐겨찾기 값이 `CLOTHES`에 저장되고 `IMAGE_BYTES`로 Oracle BLOB 이미지 데이터가 존재하는 것을 확인했습니다.
+
+### 코디와 의류 관계 저장
+
+![SQL Developer 코디-의류 JOIN 조회 결과](docs/screenshots/oracle-outfit-join.png)
+
+Android 앱에서 저장한 `ex1` 코디와 두 개의 의류가 Oracle의 `COORDINATION`, `COORDINATION_ITEM`, `CLOTHES` 테이블 JOIN 결과로 조회됩니다. `DISPLAY_ORDER` 값으로 코디에 포함된 의류 순서도 확인할 수 있습니다.
+
 ## 구현 중 해결한 문제
 
 - Android에서 Oracle에 직접 접속하지 않고 Java API 계층을 두어 DB 인증정보를 분리했습니다.
