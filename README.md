@@ -117,7 +117,7 @@ sqlplus -L system@localhost:1521/XEPDB1 @db/create_user.sql
 sqlplus -L smart_closet@localhost:1521/XEPDB1 @db/schema.sql
 ```
 
-두 명령 모두 비밀번호를 대화형으로 입력받습니다. `create_user.sql`은 `SMART_CLOSET` 전용 계정에 필요한 권한과 USERS 테이블스페이스 200MB를 할당하고, `schema.sql`은 테이블 3개와 제약조건을 생성합니다.
+두 명령 모두 비밀번호를 대화형으로 입력받습니다. `create_user.sql`은 `SMART_CLOSET` 전용 계정에 테이블 및 IDENTITY 시퀀스 생성 권한과 USERS 테이블스페이스 200MB를 할당하고, `schema.sql`은 테이블 3개와 제약조건을 생성합니다.
 
 이미 계정과 테이블을 만든 환경에서는 생성 스크립트를 다시 실행하지 않습니다.
 
